@@ -8,12 +8,43 @@ Maintained by the team behind [Darkmoon](https://github.com/ASCIT31/Dark-Moon) (
 
 ## Contents
 
+- [Comparison](#comparison)
+- [How to Choose](#how-to-choose)
 - [Autonomous Platforms](#autonomous-platforms)
 - [LLM Assisted (Human in the Loop)](#llm-assisted-human-in-the-loop)
 - [Commercial](#commercial)
 - [Benchmarks and Evaluation](#benchmarks-and-evaluation)
 - [Research and Reading](#research-and-reading)
 - [Contributing](#contributing)
+
+## Comparison
+
+The axes that actually decide a choice, for the open-source tools whose capabilities can be verified from their own repositories. Commercial tools are omitted here because their internals cannot be independently verified from public source; they are described [below](#commercial). Corrections via PR are welcome, and encouraged if you maintain one of these.
+
+Legend: ✅ yes · ➖ partial or indirect · ❌ not a stated feature
+
+| Tool | License | Mode | Web/API | Active Directory | Kubernetes | Cloud | Proof of exploitation | Local model | Model never sees real data |
+|------|---------|------|:-------:|:----------------:|:----------:|:-----:|:---------------------:|:-----------:|:--------------------------:|
+| [Darkmoon](https://github.com/ASCIT31/Dark-Moon) † | GPL-3.0 | Autonomous | ✅ | ✅ | ✅ | ➖ | ✅ | ✅ | ✅ |
+| [Strix](https://github.com/usestrix/strix) | Apache-2.0 | Autonomous | ✅ | ❌ | ❌ | ➖ | ✅ | ✅ | ❌ |
+| [PentAGI](https://github.com/vxcontrol/pentagi) | MIT | Autonomous | ✅ | ❌ | ❌ | ❌ | ➖ | ✅ | ➖ (air-gap) |
+| [HexStrike AI](https://github.com/0x4m4/hexstrike-ai) | MIT | Autonomous | ✅ | ✅ | ✅ | ✅ | ➖ | ❌ | ❌ |
+| [CAI](https://github.com/aliasrobotics/cai) | MIT | Framework | ➖ | ➖ | ➖ | ➖ | ➖ | ✅ | ❌ |
+| [PentestGPT](https://github.com/GreyDGL/PentestGPT) | MIT | Assisted | ✅ | ❌ | ❌ | ❌ | ➖ (human) | ✅ | ❌ |
+| [hackingBuddyGPT](https://github.com/ipa-lab/hackingBuddyGPT) | MIT | Assisted | ➖ | ➖ (priv-esc) | ❌ | ❌ | ➖ | ✅ | ❌ |
+
+† Maintained by us. We built the matrix, so read our row with appropriate suspicion and check it yourself. A few honest notes so this is not a rigged scorecard: **HexStrike AI** has the broadest raw tool coverage here and matches or beats us on scope breadth. **Strix** is autonomous with real PoCs and is more polished on pure web testing. Several tools run local models just as we do. The one column where the field is genuinely empty is the last one: keeping a frontier model in the loop while the model never sees a real IP, hostname or credential. That is the problem we set out to solve, and if someone else solves it too we will happily mark their box.
+
+## How to Choose
+
+- **Web only, want a strong autonomous agent:** Strix or PentAGI.
+- **Broadest tool coverage out of the box:** HexStrike AI.
+- **Learning, or CTF-style work with a human driving:** PentestGPT or hackingBuddyGPT.
+- **Building your own agents:** CAI.
+- **Active Directory and Kubernetes plus strict data privacy:** Darkmoon.
+- **Can accept a SaaS vendor and a budget:** the commercial platforms below.
+
+All of the open-source ones are free to clone, so the honest recommendation is to test the two or three that fit your constraints against a lab you own, rather than trust any table, including this one.
 
 ## Autonomous Platforms
 
