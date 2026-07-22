@@ -1,6 +1,6 @@
 # Awesome AI Penetration Testing [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-**English** · [Français](README.fr.md)
+**English** · [Français](README.fr.md) · [Español](README.es.md)
 
 > A curated list of AI and LLM powered penetration testing tools: autonomous platforms, interactive assistants, benchmarks, and the research behind them.
 
