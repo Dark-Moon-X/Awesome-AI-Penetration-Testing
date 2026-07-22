@@ -1,5 +1,7 @@
 # Awesome AI Penetration Testing [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+**English** · [Français](README.fr.md)
+
 > A curated list of AI and LLM powered penetration testing tools: autonomous platforms, interactive assistants, benchmarks, and the research behind them.
 
 The space went from empty to crowded in about two years. This list tries to be an honest map of it: what each project actually does, whether it is open source, and how far it reaches (web only, or also Active Directory, Kubernetes and cloud). No rankings, no "this one wins". Clone the two or three that fit your constraints and test them against a lab you own.
