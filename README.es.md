@@ -1,6 +1,6 @@
 # Awesome Pentest con IA [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-🌍 [English](README.md) · [Français](README.fr.md) · **Español**
+🌍 [English](README.md) · [Français](README.fr.md) · **Español** · [Português](README.pt.md) · [Deutsch](README.de.md)
 
 > Una lista curada de herramientas de pentesting impulsadas por IA y LLM: plataformas autónomas, asistentes interactivos, benchmarks y la investigación que las respalda.
 

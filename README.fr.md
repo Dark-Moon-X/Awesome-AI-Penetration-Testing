@@ -1,6 +1,6 @@
 # Awesome Pentest par IA [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-🌍 [English](README.md) · **Français** · [Español](README.es.md)
+🌍 [English](README.md) · **Français** · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md)
 
 > Une liste curée d'outils de test d'intrusion propulsés par l'IA et les LLM : plateformes autonomes, assistants interactifs, benchmarks, et la recherche qui les sous-tend.
 
